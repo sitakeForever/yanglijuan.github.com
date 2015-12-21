@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 动漫 */
+.yl_box{ width:980px; margin:0 auto; padding-bottom:49px;}
+.yl_box_l{ float:left; width:580px; padding-right:20px;}
+.yl_box_l h3{ width:560px; height:36px; border-bottom:2px solid #8ac024; background:url(../img/yl_1.jpg) no-repeat left top; padding-left:20px;}
+.yl_box_l h3 .yl_hh1{ font-size:28px; color:#699f00; float:left; line-height:28px;}
+.yl_box_l h3 .more{ font-size:14px; color:#699f00; float:left; padding-top:11px; padding-left:8px;}
+.yl_box_l h3 p{ float:left; padding-top:12px; padding-left:26px;}
+.yl_box_l h3 p a{ font-size:14px; color:#333; float:left; padding:0 8px;}
+.yl_box_l h3 p img{ float:left;}
+.yl_box_l_inner{ padding-top:25px;} 
+.yl_box_l_inner .left{ float:left; width:379px; background:#f2f2f2; border-bottom:1px solid #ebebeb;}
+.yl_box_l_inner .left .name{ height:34px; font-size:14px; padding-left:5px; line-height:34px; display:block;}
+.yl_box_l_inner .left .pg{ position:relative;}
+.yl_box_l_inner .left .opa{ width:41px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; right:0; bottom:0;}
+.yl_box_l_inner .left .msg{ width:41px; height:24px; color:#fff; text-align:center; line-height:24px; position:absolute; right:0; bottom:0;}
+
+.yl_box_l_inner .right{float:right; width:180px;}
+.yl_box_l_inner .xiaotu{width:180px; background:#f2f2f2; border-bottom:1px solid #ebebeb;}
+.yl_box_l_inner .xiaotu .name{ height:34px; font-size:14px; padding-left:5px; line-height:34px; display:block;}
+.yl_box_l_inner .xiaotu .pg{ position:relative;}
+.yl_box_l_inner .xiaotu .opa{ width:41px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; right:0; bottom:0;}
+.yl_box_l_inner .xiaotu .msg{ width:41px; height:24px; color:#fff; text-align:center; line-height:24px; position:absolute; right:0; bottom:0;}
+.yl_box_l_inner .right .tu1{ margin-bottom:15px;}
+
+
+/* 少儿 */
+.yl_box_m{ width:180px; float:left; margin-right:20px;}
+.yl_box_m h3{ width:160px; height:36px; border-bottom:2px solid #8ac024; background:url(../img/yl_1.jpg) no-repeat left top; padding-left:20px;}
+.yl_box_m h3 .yl_hh1{ font-size:28px; color:#699f00; float:left; line-height:28px;}
+.yl_box_m h3 .more{ font-size:14px; color:#699f00; float:left; padding-top:11px; padding-left:8px;}
+.yl_box_m h3 img{ float:left; padding-left:19px;}
+
+.yl_box_m .box{ width:180px; padding-top:25px;}
+.yl_box_m .xiaotu{width:180px; background:#f2f2f2; border-bottom:1px solid #ebebeb;}
+.yl_box_m .xiaotu .name{ height:34px; font-size:14px; padding-left:5px; line-height:34px; display:block;}
+.yl_box_m .xiaotu .pg{ position:relative;}
+.yl_box_m .xiaotu .opa{ width:41px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; right:0; bottom:0;}
+.yl_box_m .xiaotu .msg{ width:41px; height:24px; color:#fff; text-align:center; line-height:24px; position:absolute; right:0; bottom:0;}
+.yl_box_m .box .tu1{ margin-bottom:15px;}
+
+/* 教育 */
+.yl_box_r{ width:180px; float:left;}
+.yl_box_r h3{ width:160px; height:36px; border-bottom:2px solid #8ac024; background:url(../img/yl_1.jpg) no-repeat left top; padding-left:20px;}
+.yl_box_r h3 .yl_hh1{ font-size:28px; color:#699f00; float:left; line-height:28px;}
+.yl_box_r h3 .more{ font-size:14px; color:#699f00; float:left; padding-top:11px; padding-left:8px;}
+.yl_box_r h3 p{ float:right; font-size:14px; padding-top:11px;}
+
+.yl_box_r .box{ width:180px; padding-top:25px;}
+.yl_box_r .xiaotu{width:180px; background:#f2f2f2; border-bottom:1px solid #ebebeb;}
+.yl_box_r .xiaotu .name{ height:34px; font-size:14px; padding-left:5px; line-height:34px; display:block;}
+.yl_box_r .xiaotu .pg{ position:relative;}
+.yl_box_r .xiaotu .opa{ width:41px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; right:0; bottom:0;}
+.yl_box_r .xiaotu .msg{ width:41px; height:24px; color:#fff; text-align:center; line-height:24px; position:absolute; right:0; bottom:0;}
+.yl_box_r .box .tu1{ margin-bottom:15px;}
+
+
+/* 体育 */
+.yl_con2{width:980px; margin:0 auto;}
+.yl_sport{ width:380px; float:left; margin-right:20px;}
+.yl_sport h3{ width:360px; height:36px; border-bottom:2px solid #8ac024; background:url(../img/yl_1.jpg) no-repeat left top; padding-left:20px;}
+.yl_sport h3 .yl_hh1{ font-size:28px; color:#699f00; float:left; line-height:28px;}
+.yl_sport h3 .more{ font-size:14px; color:#699f00; float:left; padding-top:11px; padding-left:8px;}
+.yl_sport h3 p{ float:left; padding-top:12px; padding-left:26px;}
+.yl_sport h3 p a{ font-size:14px; color:#333; float:left; padding:0 8px;}
+.yl_sport h3 p img{ float:left;}
+
+.yl_sport .box{ width:180px; padding-top:25px; float:left;}
+.yl_sport .xiaotu{width:180px; background:#f2f2f2; border-bottom:1px solid #ebebeb;}
+.yl_sport .xiaotu .name{ height:34px; font-size:14px; padding-left:5px; line-height:34px; display:block;}
+.yl_sport .xiaotu .pg{ position:relative;}
+.yl_sport .xiaotu .opa{ width:41px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; right:0; bottom:0;}
+.yl_sport .xiaotu .msg{ width:41px; height:24px; color:#fff; text-align:center; line-height:24px; position:absolute; right:0; bottom:0;}
+.yl_sport .tu1{ margin-bottom:15px;}
+
+.yl_sport .box2{ width:180px; padding-top:25px; float:right;}
+
+/* 音乐 */
+.yl_music{ width:380px; float:left; margin-right:20px;}
+.yl_music h3{ width:360px; height:36px; border-bottom:2px solid #8ac024; background:url(../img/yl_1.jpg) no-repeat left top; padding-left:20px;}
+.yl_music h3 .yl_hh1{ font-size:28px; color:#699f00; float:left; line-height:28px;}
+.yl_music h3 .more{ font-size:14px; color:#699f00; float:left; padding-top:11px; padding-left:8px;}
+.yl_music h3 p{ float:left; padding-top:12px; padding-left:34px;}
+.yl_music h3 p a{ font-size:14px;  float:left;}
+
+.yl_music .inner{ padding-top:25px;}
+.yl_music .left{ float:left; width:180px; background:#f2f2f2; border-bottom:1px solid #ebebeb;}
+.yl_music .left .name{ height:34px; font-size:14px; padding-left:5px; line-height:34px; display:block;}
+.yl_music .left .pg{ position:relative;}
+.yl_music .left .opa{ width:41px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; right:0; bottom:0;}
+.yl_music .left .msg{ width:41px; height:24px; color:#fff; text-align:center; line-height:24px; position:absolute; right:0; bottom:0;}
+
+.yl_music .right{float:right; width:180px;}
+.yl_music .xiaotu{width:180px; background:#f2f2f2; border-bottom:1px solid #ebebeb;}
+.yl_music .xiaotu .name{ height:34px; font-size:14px; padding-left:5px; line-height:34px; display:block;}
+.yl_music .xiaotu .pg{ position:relative;}
+.yl_music .xiaotu .opa{ width:41px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; right:0; bottom:0;}
+.yl_music .xiaotu .msg{ width:41px; height:24px; color:#fff; text-align:center; line-height:24px; position:absolute; right:0; bottom:0;}
+.yl_music .right .tu1{ margin-bottom:15px;}
+
+/* 时尚 */
+.yl_fashion{ width:180px; float:left;}
+.yl_fashion h3{ width:160px; height:36px; border-bottom:2px solid #8ac024; background:url(../img/yl_1.jpg) no-repeat left top; padding-left:20px;}
+.yl_fashion h3 .yl_hh1{ font-size:28px; color:#699f00; float:left; line-height:28px;}
+.yl_fashion h3 .more{ font-size:14px; color:#699f00; float:left; padding-top:11px; padding-left:8px;}
+.yl_fashion h3 p{ padding-top:13px;}
+.yl_fashion h3 p a{ font-size:14px;  float:right;}
+
+.yl_fashion .box{ width:180px; padding-top:25px;}
+.yl_fashion .xiaotu{width:180px; background:#f2f2f2; border-bottom:1px solid #ebebeb;}
+.yl_fashion .xiaotu .name{ height:34px; font-size:14px; padding-left:5px; line-height:34px; display:block;}
+.yl_fashion .xiaotu .pg{ position:relative;}
+.yl_fashion .xiaotu .opa{ width:41px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; right:0; bottom:0;}
+.yl_fashion .xiaotu .msg{ width:41px; height:24px; color:#fff; text-align:center; line-height:24px; position:absolute; right:0; bottom:0;}
+.yl_fashion .box .tu1{ margin-bottom:15px;}
+
+
+/* 更多 */
+.yl_gengduo{width:980px; margin:0 auto;}
+.yl_more{ width:180px; border-bottom:5px solid #6ba400; margin-right:20px; float:left;}
+.yl_more .pg{ position:relative;}
+.yl_more .opa{ width:180px; height:24px; background:#000;  opacity:0.4; filter:alpha(opacity:40); position:absolute; right:0; bottom:0;}
+.yl_more .msg{ font-size:14px; color:#fff; height:24px; line-height:24px; padding-left:5px; position:absolute; left:0; bottom:0;}
+.yl_more .name{ height:34px; background:#8ac024; color:#fff; font-size:23px; line-height:34px; padding-left:27px;}
+.yl_more .name i{ font-size:14px; margin-left:7px;}
+.yl_gengduo .last{margin-right:0;}

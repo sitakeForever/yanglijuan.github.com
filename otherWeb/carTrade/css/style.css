@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bigbox{ width:580px; margin:0 auto; background:#f2f2f2;}
+.header1{ height:38px; width:580px; margin:0 auto; padding-top:12px;}
+h1{ width:161px; height:27px; background:url(../img/1.jpg); text-indent:-999em; float:left; margin-left:12px;}
+h1 a{ display:block; height:100%;}
+.header1 .add{ float:right; font-size:14px; color:#333; line-height:15px; margin-top:6px; margin-right:20px;}
+.header1 .add i{ float:left; width:11px; height:15px; background:url(../img/2.jpg); margin-right:3px;}
+
+.header2{ width:320px; height:150px; margin:0 auto; position:relative;}
+.header2 .input{ position:absolute; width:298px; height:36px; left:10px; bottom:10px;}
+.header2 .input .pg{ position:absolute; top:0; left:0;}
+.header2 input{width:262px; height:36px; border:none; padding-left:36px;}
+
+.header3{ width:320px; height:68px; margin:0 auto; background:#fff; border-bottom:1px solid #eee; margin-bottom:10px;}
+.header3 li{ float:left; width:25%; height:68px; box-sizing:border-box; padding-left:23px; padding-top:10px; border-left:1px solid #ddd;}
+.header3 .first{ border-left:none;}
+.header3 li .pg{ width:35px; height:35px; display:block; background:url(../img/1.png) no-repeat; background-size:100% auto;}
+.header3 li .pg2{ background-position:0 -35px;}
+.header3 li .pg3{ background-position:0 -70px;}
+.header3 li .pg4{ background-position:0 -105px;}
+.header3 li .name{ color:#333; margin-left:5px; margin-top:3px;}
+
+.car{ width:320px; height:115px; margin:0 auto; border-bottom:1px solid #eee; border-top:1px solid #eee; background:#fff; margin-bottom:10px;}
+.car_l{ width:50%; box-sizing:border-box; height:100%; border-right:2px solid #f4f4f4; float:left;}
+.car_r{ float:left; width:50%; height:100%;}
+.car_r_t{ height:57px; border-bottom:2px solid #f4f4f4;}
+.car_r_b{ height:56px;}
+
+.price{ width:320px; height:444px; background:#fff; margin:0 auto; padding-top:10px; margin-bottom:10px;}
+.price .fee{ font-size:14px; color:#333; border-left:5px solid #f37e0b; height:21px; line-height:21px; padding-left:10px; margin-bottom:10px;}
+.price .ping{ margin-top:10px; border-left:5px solid #4881c9;}
+.price .car2{border-left:5px solid #48c242;}
+.price .fee2{ height:87px; width:100%; box-sizing:border-box; border-top:1px solid #ddd;}
+.price .fee2 ul{ width:100%;}
+
+.price .fee2 li{ float:left; width:25%; height:43px; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:14px; color:#333; text-align:center; line-height:42px; box-sizing:border-box;}
+.price .fee2 .a1{}
+.price .fee2 .a2{}
+.price .fee2 .a3{}
+.price .fee2 .sp{ border-right:none;}
+
+.ping2{ height:157px; width:100%; box-sizing:border-box; border-top:1px solid #ddd;}
+.ping2 li{ float:left; width:25%; height:78px; box-sizing:border-box; border-right:1px solid #ddd; border-bottom:1px solid #ddd; padding-left:10px; padding-top:9px;}
+.ping2 .sp{ border-right:none;}
+.ping2 li .pg{ width:58px; height:40px; display:block; background:url(../img/2.png) no-repeat;}
+.ping2 li .pg1{ background-position:-58px 0;}
+.ping2 li .pg2{ background-position:-116px 0;}
+.ping2 li .pg3{ background-position:-174px 0;}
+.ping2 li .pg4{ background-position:-232px 0;}
+.ping2 li .pg6{ background-position:-290px 0;}
+.ping2 li .pg7{ background-position:-348px 0;}
+.ping2 li .pg8{ background-position:-406px 0;}
+.ping2 li .name{ font-size:14px; color:#333; margin-left:16px; margin-top:7px;}
+.ping2 li .sp1{ margin-left:2px;}
+
+.footer1{ width:320px; height:138px; background:#fff; border-top:1px solid #eee; margin:0 auto;}
+.footer1 .tou_l{ float:left; width:50%; height:58px; border-right:1px solid #f4f4f4; box-sizing:border-box;}
+.footer1 .tou_r{ float:left; width:50%; height:58px; border-left:1px solid #f4f4f4; box-sizing:border-box;}
+.footer1 .tou_l_l{ float:left; width:60%;}
+.footer1 .tou_l_l .name1{ font-size:14px; color:#333; margin-left:13px; margin-top:17px; margin-bottom:5px;}
+.footer1 .tou_l_l .name2{color:#bababa; margin-left:12px;}
+.footer1 .tou_l_l .c-red{ color:#ff5500;}
+.footer1 .tou_l_r{ float:left; width:37%;}
+.footer1 .tou_r_l{ width:70%; float:left;}
+.footer1 .tou_r_l .name1{ font-size:14px; color:#333; margin-left:11px; margin-top:17px; margin-bottom:4px;}
+.footer1 .tou_r_l .name2{color:#bababa; margin-left:11px;}
+.footer1 .tou_r_r{ float:left; width:30%;}
+.footer1 .tou_r_r img{ margin-top:18px;}
+.footer1 .wei{ width:100%;}
+
+.footer2{ height:61px; width:320px; margin:0 auto; text-align:center; padding-top:19px;}
+.footer2 .p1 a{font-size:14px; color:#333;}
+.footer2 .p1 i{font-size:15px; color:#ccc;}
+.footer2 .p2{ color:#999; margin-top:15px;}
+.footer2 .p2 i{ color:#ff5500; font-weight:bold;}

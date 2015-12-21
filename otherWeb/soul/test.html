@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+ul{ width:321px; margin:0 auto;}
+.nv{ border:1px solid #433b4f; position:relative; display:none; margin-bottom:10px;}
+.opa{ width:100%; height:36px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; left:0; bottom:0;}
+.msg{ height:36px; position:absolute; left:0; bottom:0; width:100%; line-height:36px;}
+.mi{ float:left; font-size:14px; color:#fff; margin-left:5px;}
+.ren{ float:right; color:#a997c3; font-size:14px; margin-right:8px;}
+.ren span{ float:left; width:15px; height:15px; background:url(../img/ren.jpg); margin-right:5px; margin-top:10px;}
+
+.msg1{ width:319px; height:25px; background:url(img/sprite.jpg) no-repeat -319px -530px; line-height:25px; margin-bottom:3px;}
+.msg1:hover{ background-position:0 -530px;}
+.msg1 .qian{ float:left; color:#a6b2d8; margin-left:27px;}
+.msg1 .hou{ float:right; color:#a6b2d8; margin-right:11px;}
+.active .nv{ display:block;}
+.active .msg1{ display:none;}
+
+
+</style>
+<script>
+window.onload=function(){
+	var nv2=document.getElementById('nv2');	
+	var aLi=nv2.getElementsByTagName('li');
+	for(var i=0;i<aLi.length;i++){
+		aLi[i].onmouseover=function(){
+			for(var i=0;i<aLi.length;i++){
+				aLi[i].className='';	
+			}
+			this.className='active';	
+		}	
+	}
+	
+}
+</script>
+</head>
+<body>
+<ul id="nv2">
+	<li class="active">
+    	<div class="nv">
+             <img src="img/1.jpg" />
+             <p class="opa"></p>
+            <p class="msg clearfix">
+              <i class="mi">女武神的秘宝</i>
+              <i class="ren"><span></span>共7,294,712人关注</i>
+            </p>
+       </div>
+       
+        <p class="clearfix msg1">
+       	<a href="#" class="qian">神谕者的成长礼</a>
+        <a href="#" class="hou">进行中</a>
+       </p>
+    </li>
+    <li>
+    	<div class="nv">
+             <img src="img/1.jpg" />
+             <p class="opa"></p>
+            <p class="msg clearfix">
+              <i class="mi">女武神的秘宝</i>
+              <i class="ren"><span></span>共7,294,712人关注</i>
+            </p>
+       </div>
+       
+        <p class="clearfix msg1">
+       	<a href="#" class="qian">神谕者的成长礼</a>
+        <a href="#" class="hou">进行中</a>
+       </p>
+    </li>
+    <li>
+    	<div class="nv">
+             <img src="img/1.jpg" />
+             <p class="opa"></p>
+            <p class="msg clearfix">
+              <i class="mi">女武神的秘宝</i>
+              <i class="ren"><span></span>共7,294,712人关注</i>
+            </p>
+       </div>
+       
+        <p class="clearfix msg1">
+       	<a href="#" class="qian">神谕者的成长礼</a>
+        <a href="#" class="hou">进行中</a>
+       </p>
+    </li>
+</ul>
+</body>  
+</html>

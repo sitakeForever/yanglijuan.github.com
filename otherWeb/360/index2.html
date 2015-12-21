@@ -1,0 +1,3426 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script>
+window.onload=function (){
+	tab('j-tab');
+	function tab(sName){
+		var aParent=document.getElementsByClassName(sName);
+			for(var i=0;i<aParent.length;i++){
+				_tab(aParent[i]);	
+			}
+			function _tab(oParent)
+			{
+				var aBtn=oParent.getElementsByClassName('j-btn');	
+				var aBox=oParent.getElementsByClassName('j-box');
+					for(var i=0;i<aBtn.length;i++){
+						aBtn[i].index=i;
+						aBtn[i].onclick=function(){
+							for(var i=0;i<aBtn.length;i++){
+								aBtn[i].className='j-btn';
+								aBox[i].className='j-box';	
+							}
+								aBtn[aBtn.length-1].className='j-btn last';
+							
+							if(this.index==aBtn.length-1){
+								this.className='j-btn last active';	
+							}else{
+								this.className='j-btn active';	
+							}
+							
+							aBox[this.index].className='j-box active';
+						};	
+					}
+			}
+	}
+};
+</script>
+</head>
+
+<body>
+<div class="header1">
+	<div class="_header1 clearfix">
+    	<a href="#" class="nav1">设360导航为首页</a>
+        <div class="mid-nav clearfix">
+        	<a href="javascript:;" class="mid-nav-l active"></a>
+            <a href="javascript:;" class="mid-nav-r"></a>
+        </div>
+        <ul class="nav3 clearfix">
+        	<li><a href="javascript:;">免费WiFi</a></li>
+            <li><a href="javascript:;">反馈意见</a></li>
+            <li class="last"><a href="javascript:;">换肤</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="header2 clearfix">
+	<h1><a href="#">360导航</a></h1>
+    
+    <div class="city">
+    	<p>北京</p>
+        <a href="javascript:;">[切换]</a>
+    </div>
+    
+    <div class="weather clearfix">
+     <a href="#">
+    	<div class="today">
+            <span class="pg1"></span>
+            <div class="msg1">
+                <p class="p1">今 晴 25~11℃</p>
+                <p>空气质量：<i>轻度污染</i></p>
+            </div>
+        </div>
+        </a>
+        <a href="#">
+        <div class="yesterday">
+            <span class="pg2"></span>
+            <div class="msg2">
+                <p class="p1">明 霾</p>
+                <p> 25~12℃</p>
+            </div>
+        </div>
+        </a>
+        <a href="javascript:;" class="btn"></a>
+    </div>
+    
+    <a href="#">
+    <div class="data">
+    	<p class="p1">10月15日周四</p>
+        <p>九月初三</p>
+    </div>
+    </a>
+    
+    <div class="mail">
+    	<a href="#" class="joke">笑话：准备改行做纹身师了</a>
+        <div class="clearfix">
+        	<i></i>
+            <input type="text" placeholder="邮箱账号" />
+        </div>
+    </div>
+</div>
+
+<div class="header3">
+	<ul class="nav1 clearfix">
+    	<li class="active"><a href="javascript:;">网页</a></li>
+        <li><a href="javascript:;">新闻</a></li>
+        <li><a href="javascript:;">视频</a></li>
+        <li><a href="javascript:;">图片</a></li>
+        <li><a href="javascript:;">音乐</a></li>
+        <li><a href="javascript:;">微博</a></li>
+        <li><a href="javascript:;">地图</a></li>
+        <li><a href="javascript:;">问答</a></li>
+        <li><a href="javascript:;">购物</a></li>
+        <li><a href="javascript:;">机票</a></li>
+        <li><a href="javascript:;">汽车</a></li>
+    </ul>
+    
+    <div class="search clearfix">
+    	<div class="sear1">
+        	<a href="#" class="con">综合搜索</a>
+            <a href="javascript:;" class="select"></a>
+        </div>
+        <div class="sear2 clearfix">
+        	<input type="text" class="txt" />
+            <a href="#" class="redpot">4</a>
+            <input type="submit" value="好搜一下"  class="submit"/>
+        </div>
+        <a href="#"><p class="scroll">奇酷青春版火热抢购中</p></a>
+    </div>
+    
+    <div class="tip clearfix">
+    	<a href="#" class="manage"></a>
+        <a href="#" class="weather"><i></i>天气</a>
+        <a href="#" class="qq"><i></i>qq邮箱</a>
+        <a href="#" class="yi"><i></i>163</a>
+        <a href="#" class="video"><i></i>花千骨在线</a>
+        <a href="#" class="buy"><i></i>淘宝</a>
+        <a href="#" class="ai"><i></i>爱奇艺</a>
+        <span class="change"></span>
+    </div>
+</div>
+
+<div class="bg">
+	<div class="bignav">
+    	<ul class="clearfix">
+        	<li class="j-btn active"><a href="javascript:;"><i class="pg"></i>我的主页</a></li>
+            <li class="j-btn"><a href="javascript:;"><i class="pg pg2"></i>新闻头条</a></li>
+            <li class="j-btn"><a href="javascript:;"><i class="pg pg3"></i>电视剧</a></li>
+            <li class="j-btn"><a href="javascript:;"><i class="pg pg4"></i>最新电影</a></li>
+            <li class="j-btn"><a href="javascript:;"><i class="pg pg5"></i>小游戏</a></li>
+            <li class="j-btn"><a href="javascript:;"><i class="pg pg6"></i>小说大全</a></li>
+            <li class="j-btn"><a href="javascript:;"><i class="pg pg7"></i>旅游度假</a></li>
+            <li class="j-btn"><a href="javascript:;"><i class="pg pg8"></i>网上购物</a></li>
+            <li class="j-btn"><a href="javascript:;"><i class="pg pg9"></i>今日团购</a></li>
+        </ul>
+        <a href="javascript:;" class="sound">
+        	<i></i>
+            <p>开启</p>
+        </a>
+        <div class="down"><i></i></div>
+    </div>
+    
+    <div class="content1 clearfix">
+    	<div class="con1_l">
+        	<div class="j-tab hot">
+            	<div class="tit clearfix">
+                	<a href="javascript:;" class="j-btn active">热门</a>
+                    <a href="javascript:;" class="j-btn">理财</a>
+                    <a href="javascript:;" class="j-btn">生活</a>
+                </div>
+                <div class="j-box active">
+                    <ul class="h-box clearfix">
+                        <li><i></i><a href="#" class="left">新闻1</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li class="last"><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li class="last"><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                    </ul>
+                </div>
+                <div class="j-box">
+                	<ul class="h-box clearfix">
+                        <li><i></i><a href="#" class="left">体育2</a>•<a href="#" class="right">娱乐</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li class="last"><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li class="last"><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                    </ul>
+                </div>
+                <div class="j-box">
+                	<ul class="h-box clearfix">
+                        <li><i></i><a href="#" class="left">广告3</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">广告</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li class="last"><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                        <li class="last"><i></i><a href="#" class="left">新闻</a>•<a href="#" class="right">视频</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="adver">
+            	<a href="#"><img src="img/ad1.jpg" /></a>
+                <a href="#" class="ad ad1">数码狂欢，预定99抵198元</a>
+                <a href="#" class="ad">双11预售。。。。。</a>
+            </div>
+            
+            <div class="guess">
+            	<h3 class="hh1 clearfix">
+                	<p>猜你爱看</p>
+                    <a href="javascript:;"><i></i>换一下</a>
+                </h3>
+                
+                <div class="j-tab tab1">
+                	<ul class="headline clearfix">
+                    	<li class="j-btn active"><a href="javascript:;">头条</a></li>
+                        <li class="j-btn"><a href="javascript:;">八卦</a></li>
+                        <li class="j-btn"><a href="javascript:;">正能量</a></li>
+                        <li class="j-btn last"><a href="javascript:;">军事</a></li>
+                    </ul>
+                    <div class="j-box active">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/d9.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="news">
+                        	<li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/d10.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="news">
+                        	<li class="clearfix"><i></i><a href="#">官员联合索贿 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员联合索贿 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/d11.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="news">
+                        	<li class="clearfix"><i></i><a href="#">官员夫妻联合索 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/d112.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="news">
+                        	<li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                            <li class="clearfix"><i></i><a href="#">官员夫妻联合索贿 同落马同获刑</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tab2 j-tab">
+                	<ul class="headline clearfix">
+                    	<li class="j-btn"><a href="javascript:;">视频</a></li>
+                        <li class="j-btn active"><a href="javascript:;">电视剧</a></li>
+                        <li class="j-btn"><a href="javascript:;">电影</a></li>
+                        <li class="j-btn last"><a href="javascript:;">花边</a></li>
+                    </ul>
+                    <div class="j-box active">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/d1.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="video">
+                        	<li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/d2.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="video">
+                        	<li class="clearfix"><i></i><a href="#">《花千骨》22</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/d3.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="video">
+                        	<li class="clearfix"><i></i><a href="#">《花千骨》33</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女2》</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/d4.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="video">
+                        	<li class="clearfix"><i></i><a href="#">《花千骨》42</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》</a><a href="#">《旋风少女》</a></li>
+                            <li class="clearfix"><i></i><a href="#">《花千骨》55</a><a href="#">《旋风少女》</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="j-tab">
+                	<ul class="headline clearfix">
+                    	<li class="j-btn active"><a href="javascript:;">服装</a></li>
+                        <li class="j-btn"><a href="javascript:;">鞋包</a></li>
+                        <li class="j-btn"><a href="javascript:;">食品</a></li>
+                        <li class="j-btn last"><a href="javascript:;">特卖</a></li>
+                    </ul>
+                     <div class="j-box active">
+                    	<div class="cloth clearfix">
+                        	<a href="#">
+                        	<div class="cloth_a">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="#"><div class="cloth_b">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="cloth_c">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="cloth_d">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                        </div>
+                        <ul class="clearfix">
+                        	<li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<div class="cloth clearfix">
+                        	<a href="#">
+                        	<div class="cloth_a">
+                            	<img src="img/pg2.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="#"><div class="cloth_b">
+                            	<img src="img/pg2.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="cloth_c">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="cloth_d">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                        </div>
+                        <ul class="clearfix">
+                        	<li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<div class="cloth clearfix">
+                        	<a href="#">
+                        	<div class="cloth_a">
+                            	<img src="img/pg3.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="#"><div class="cloth_b">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="cloth_c">
+                            	<img src="img/pg3.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="cloth_d">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                        </div>
+                        <ul class="clearfix">
+                        	<li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<div class="cloth clearfix">
+                        	<a href="#">
+                        	<div class="cloth_a">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="#"><div class="cloth_b">
+                            	<img src="img/pg4.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="cloth_c">
+                            	<img src="img/pg1.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="cloth_d">
+                            	<img src="img/pg4.jpg" />
+                                <div class="msg1">
+                                	<p>秋冬新品</p>
+                                    <p>秋冬新品</p>
+                                    <p class="c-orange">秋冬新品</p>
+                                </div>
+                            </div></a>
+                        </div>
+                        <ul class="clearfix">
+                        	<li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+				<div class="j-tab">
+                	<ul class="headline clearfix">
+                    	<li class="j-btn active"><a href="javascript:;">游戏</a></li>
+                        <li class="j-btn"><a href="javascript:;">最好玩</a></li>
+                        <li class="j-btn"><a href="javascript:;">最火爆</a></li>
+                        <li class="j-btn last"><a href="javascript:;">小游戏</a></li>
+                    </ul>
+                    <div class="j-box active">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/5e.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="clearfix">
+                        	<li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/8e.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="clearfix">
+                        	<li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/7e.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="clearfix">
+                        	<li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<a href="#"><div class="pg">
+                        	<img src="img/6e.jpg" />
+                            <p class="opa"></p>
+                            <p class="msg">全球最累10大城市无北上广</p>
+                        </div></a>
+                        <ul class="clearfix">
+                        	<li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list1 list3 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="j-tab">
+                	<ul class="headline clearfix">
+                    	<li class="j-btn active"><a href="javascript:;">竞技彩</a></li>
+                        <li class="j-btn"><a href="javascript:;">包赚钱</a></li>
+                        <li class="j-btn"><a href="javascript:;">大乐透</a></li>
+                        <li class="j-btn last"><a href="javascript:;">双色球</a></li>
+                    </ul>
+                    <div class="j-box active">
+                    	<p class="p1 clearfix">
+                        	<a href="#">10月17日 02:30</a>
+                            <a href="#">美因茨VS多 特</a>
+                            <a href="#">开奖</a>
+                        </p>
+                        <a href="#"><img src="img/aa.jpg" class="advo" /></a>
+                        <ul class="nav2 clearfix">
+                        	 <li class="list2 clearfix"><a href="#">猜一场比赛</a></li>
+                             <li class="list2 clearfix"><i></i><a href="#">猜多场比赛</a></li>
+                             <li class="list2 clearfix"><i></i><a href="#">猜比分</a></li>
+                        </ul>
+                         <ul class="nav3 clearfix">
+                        	<li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<p class="p1 clearfix">
+                        	<a href="#">10月17日 02:30</a>
+                            <a href="#">美因茨VS多 特</a>
+                            <a href="#">开奖</a>
+                        </p>
+                        <a href="#"><img src="img/aa2.jpg" class="advo" /></a>
+                        <ul class="nav2 clearfix">
+                        	 <li class="list2 clearfix"><a href="#">猜一场比赛</a></li>
+                             <li class="list2 clearfix"><i></i><a href="#">猜多场比赛</a></li>
+                             <li class="list2 clearfix"><i></i><a href="#">猜比分</a></li>
+                        </ul>
+                         <ul class="nav3 clearfix">
+                        	<li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<p class="p1 clearfix">
+                        	<a href="#">10月17日 02:30</a>
+                            <a href="#">美因茨VS多 特</a>
+                            <a href="#">开奖</a>
+                        </p>
+                        <a href="#"><img src="img/aa3.jpg" class="advo" /></a>
+                        <ul class="nav2 clearfix">
+                        	 <li class="list2 clearfix"><a href="#">猜一场比赛</a></li>
+                             <li class="list2 clearfix"><i></i><a href="#">猜多场比赛</a></li>
+                             <li class="list2 clearfix"><i></i><a href="#">猜比分</a></li>
+                        </ul>
+                         <ul class="nav3 clearfix">
+                        	<li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="j-box">
+                    	<p class="p1 clearfix">
+                        	<a href="#">10月17日 02:30</a>
+                            <a href="#">美因茨VS多 特</a>
+                            <a href="#">开奖</a>
+                        </p>
+                        <a href="#"><img src="img/aa4.jpg" class="advo" /></a>
+                        <ul class="nav2 clearfix">
+                        	 <li class="list2 clearfix"><a href="#">猜一场比赛</a></li>
+                             <li class="list2 clearfix"><i></i><a href="#">猜多场比赛</a></li>
+                             <li class="list2 clearfix"><i></i><a href="#">猜比分</a></li>
+                        </ul>
+                         <ul class="nav3 clearfix">
+                        	<li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            <li class="list1 clearfix"><i></i><a href="#">运动户外专场</a></li>
+                            <li class="list2 clearfix"><i></i><a href="#">秋冬新款</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="charge">
+                	<p class="clearfix p2">
+                    	<a href="#" class="charge1">充话费</a>
+                        <span>|</span>
+                        <a href="#" class="charge2">充流量</a>
+                        <a href="#" class="charge4">点卡</a>
+                        <a href="#" class="charge3">机票</a> 
+                    </p>
+                    <p class="p3 clearfix">
+                    	<input type="text" class="inp1" placeholder="请输入手机号" />
+                        <input type="submit" class="inp2" value="充值" />
+                    </p>
+                </div>
+                
+                
+                
+                
+                
+                
+            </div>
+            
+        </div>
+        
+        <div class="con1_r">
+        	<div class="steward">
+            	<h3 class="clearfix">
+                	<p>网址管家</p>
+                    <a href="javascript:;">管理我的网址</a>
+                </h3>
+                <div class="box1">
+                    <ul class="nav1 clearfix">
+                        <li><a href="#">好搜</a> • <a href="#">360商城</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li class="pg po1"><i></i><a href="#">天猫</a> • <a href="#">优惠</a><img src="img/03.jpg" /></li>
+                        <li><a href="#">搜狐</a> • <a href="#">视频</a></li>
+                        <li><a href="#">网易</a> • <a href="#">邮箱</a></li>
+                        <li><a href="#">网易</a> • <a href="#">邮箱</a></li>
+                        <li class="c-green"><a href="#">网易</a></li>
+                        <li><a href="#">网易</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li class="pg pg2"><i></i><a href="#">携程旅游</a></li>
+                        <li><a href="#">网易</a></li>
+                        <li class="pg pg3"><i></i><a href="#">360影视</a></li>
+                        <li><a href="#">网易</a></li>
+                        <li class="c-orange"><a href="#">国美在线</a></li>
+                        <li><a href="#">好搜</a> • <a href="#">360商城</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li class="pg pg4"><i></i><a href="#">京东商城</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                    </ul>
+                    <a href="javascript:;"><img src="img/01.png" class="my" /></a>
+                </div>
+                <div class="box2">
+                	 <ul class="nav1 clearfix">
+                        <li><a href="#">好搜</a> • <a href="#">360商城</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li class="pg po1"><i></i><a href="#">天猫</a> • <a href="#">优惠</a><img src="img/03.jpg" /></li>
+                        <li><a href="#">搜狐</a> • <a href="#">视频</a></li>
+                        <li><a href="#">网易</a> • <a href="#">邮箱</a></li>
+                        <li><a href="#">网易</a> • <a href="#">邮箱</a></li>
+                        <li class="c-green"><a href="#">网易</a></li>
+                        <li><a href="#">网易</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li class="pg pg2"><i></i><a href="#">携程旅游</a></li>
+                        <li><a href="#">网易</a></li>
+                        <li class="pg pg3"><i></i><a href="#">360影视</a></li>
+                        <li><a href="#">网易</a></li>
+                        <li class="c-orange"><a href="#">国美在线</a></li>
+                        <li><a href="#">好搜</a> • <a href="#">360商城</a></li>
+                        <li><a href="#">新浪</a> • <a href="#">微博</a></li>
+                        <li class="pg pg4"><i></i><a href="#">京东商城</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                        <li><a href="#">58网易</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="find j-tab">
+            	<h3 class="clearfix">
+                	<p>发现你喜欢</p>
+                    <div>
+                    	<a href="javascript:;" class="pot-l"></a>
+                        <a href="javascript:;" class="j-btn active"></a>
+                        <a href="javascript:;" class="j-btn"></a>
+                        <a href="javascript:;" class="j-btn"></a>
+                        <a href="javascript:;" class="pot-r"></a>
+                    </div>
+                </h3>
+                <div class="j-box active">
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版1</a></dd>
+                            <dd><a href="#">传奇单机版1</a></dd>
+                            <dd><a href="#">传奇单机版1</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>   
+                </div>
+                 <div class="j-box">
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版2</a></dd>
+                            <dd><a href="#">传奇单机版2</a></dd>
+                            <dd><a href="#">传奇单机版2</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>   
+                </div>
+                 <div class="j-box">
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版3</a></dd>
+                            <dd><a href="#">传奇单机版3</a></dd>
+                            <dd><a href="#">传奇单机版3</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="lastone">换一换</a>
+                    </div>   
+                </div>
+            </div>
+            
+            <div class="ad2">
+            	<a href="#">爆笑囧图</a>
+                <a href="#">爆笑囧图</a>
+                <a href="#">爆笑囧图</a>
+                <a href="#">爆笑囧图</a>
+                <a href="#">爆笑囧图</a>
+                <a href="#">爆笑囧图</a>
+                <a href="#">爆笑囧图</a>
+                <a href="#">爆笑囧图</a>
+                <a href="#">爆笑囧图</a>
+                <a href="#">爆笑囧图</a>
+            </div>
+            
+            <div class="more">
+            	<ul class="clearfix l-nav">
+                	<li><a href="#">游戏</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">聚划算</a></li>
+                    <li><a href="#">游戏精选</a></li>
+                    <li class="lastone"><a href="#">2016国考</a></li>
+                </ul>
+                <div class="box1">
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                </div>
+                <ul class="clearfix l-nav l-nav2">
+                	<li><a href="#">新闻</a></li>
+                    <li><a href="#">军事</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">聚划算</a></li>
+                    <li><a href="#">游戏精选</a></li>
+                    <li class="lastone"><a href="#">公务员</a></li>
+                </ul>
+                <div class="box1">
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd class="c-orange"><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd class="c-orange"><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                </div>
+                
+                <ul class="clearfix l-nav l-nav2">
+                	<li><a href="#">新车</a></li>
+                    <li><a href="#">银行</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">聚划算</a></li>
+                    <li><a href="#">游戏精选</a></li>
+                    <li class="lastone"><a href="#">青少年安全教育</a></li>
+                </ul>
+                <div class="box1">
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd class="c-orange"><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd class="c-orange"><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                </div>
+                
+                <ul class="clearfix l-nav l-nav2">
+                	<li><a href="#">租房</a></li>
+                    <li><a href="#">二手房</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">聚划算</a></li>
+                    <li><a href="#">度假</a></li>
+                    <li class="lastone"><a href="#">酒店</a></li>
+                </ul>
+                <div class="box1">
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd class="c-orange"><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd class="c-orange"><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd class="c-orange"><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                    <div class="row">
+                        <dl class="clearfix">
+                            <dt><a href="#">游戏</a></dt>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd><a href="#">传奇单机版</a></dd>
+                            <dd class="c-orange"><a href="#">传奇单机版</a></dd>
+                        </dl>
+                        <a href="javascript:;" class="last">更多&gt;&gt;</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="edu">
+            	<ul class="clearfix">
+                	<li class="list1"><a href="#" class="name">教育</a><span>|</span><a href="#" class="con">高考作文临场发挥赠分指南</a></li>
+                    <li><a href="#" class="name">美食</a><span>|</span><a href="#" class="con">经济版海味小抄</a></li>
+                    <li><a href="#" class="name">团购</a><span>|</span><a href="#" class="con">美团代金券</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content2 clearfix">
+    	<div class="mode">
+        	<h3 class="clearfix">
+            	<i></i>
+                <a href="#" class="tit1">生活服务</a>
+                <a href="#" class="tit2">如何在梦中记单词</a>
+            </h3>
+            <dl class="clearfix">
+            	<dt><a href="#">生活</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt class="c-orange"><a href="#">购物</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">汽车</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">理财</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">女性</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">旅游</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">火车票</a></dd>
+                <dd><a href="#">优惠</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+        </div>
+        <div class="mode">
+        	<h3 class="clearfix">
+            	<i></i>
+                <a href="#" class="tit1">生活服务</a>
+                <a href="#" class="tit2">如何在梦中记单词</a>
+            </h3>
+            <dl class="clearfix">
+            	<dt><a href="#">生活</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt class="c-orange"><a href="#">购物</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">汽车</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">理财</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">女性</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">旅游</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">火车票</a></dd>
+                <dd><a href="#">优惠</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+        </div>
+        <div class="mode last">
+        	<h3 class="clearfix">
+            	<i></i>
+                <a href="#" class="tit1">生活服务</a>
+                <a href="#" class="tit2">如何在梦中记单词</a>
+            </h3>
+            <dl class="clearfix">
+            	<dt><a href="#">生活</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt class="c-orange"><a href="#">购物</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">汽车</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">理财</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">女性</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt><a href="#">旅游</a></dt>
+                <dd><a href="#">房产</a></dd>
+                <dd><a href="#">火车票</a></dd>
+                <dd><a href="#">优惠</a></dd>
+                <dd><a href="#">房产</a></dd>
+            </dl>
+        </div>
+    </div>
+    
+    <div class="relax j-tab">
+    	<div class="tit clearfix">
+        	<h3><a href="#"><i></i>放松一下</a></h3>
+            <ul class="nav clearfix">
+            	<li class="j-btn active"><a href="javascript:;">爆笑囧图</a></li>
+                <li class="j-btn"><a href="javascript:;">精彩小说</a></li>
+                <li class="j-btn"><a href="javascript:;">旅游度假</a></li>
+                <li class="j-btn"><a href="javascript:;">养眼美图</a></li>
+            </ul>
+            <ul class="nav2 clearfix">
+            	<li><a href="#">囧图</a></li>
+                <li><a href="#">嘻嘻哈哈</a></li>
+                <li><a href="#">搞笑视频</a></li>
+                <li><a href="#">娱乐八卦</a></li>
+                <li><a href="#">主播</a></li>
+            </ul>
+        </div>
+        
+        <div class="j-box active">
+        	<ul class="nav3 clearfix">
+                <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+            </ul>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+        </div>
+        
+        <div class="j-box">
+        	<ul class="nav3 clearfix">
+                <a href="#"><li>
+                	<img src="img/c1.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c1.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c1.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+            </ul>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+        </div>
+        
+        <div class="j-box">
+        	<ul class="nav3 clearfix">
+                <a href="#"><li>
+                	<img src="img/c2.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c2.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c2.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c4.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+            </ul>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+        </div>
+        
+        <div class="j-box">
+        	
+        	<ul class="nav3 clearfix">
+                <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+                 <a href="#"><li>
+                	<img src="img/c5.jpg" />
+                    <p class="opa"></p>
+                    <p class="name">汪星人爱上了这个游戏</p>
+                </li></a>
+            </ul>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+            
+        </div>
+        
+    </div>
+    
+    <div class="watch j-tab">
+    	<div class="tit clearfix">
+        	<h3><a href="#"><i></i>看视频</a></h3>
+            <ul class="nav clearfix">
+            	<li class="j-btn active"><a href="javascript:;">热播</a></li>
+                <li class="j-btn"><a href="javascript:;">电视剧</a></li>
+                <li class="j-btn"><a href="javascript:;">电影</a></li>
+            </ul>
+            <ul class="nav2 clearfix">
+            	<li><a href="#">囧图</a></li>
+                <li><a href="#">嘻嘻哈哈</a></li>
+                <li><a href="#">搞笑视频</a></li>
+                <li><a href="#">娱乐八卦</a></li>
+                <li><a href="#">主播</a></li>
+            </ul>
+        </div>
+        
+        <div class="j-box active">
+        	<div class="box clearfix">
+        		<div class="lbox">
+                	<div class="lbox-t clearfix">
+                            <div>
+                                <a href="#"><img src="img/m1.jpg" /></a>
+                                <a href="#"><p>360影视大全</p></a>
+                            </div>
+                            <div class="div2">
+                                <a href="#"><img src="img/m2.jpg" /></a>
+                                <a href="#"><p>乐视</p></a>
+                            </div>
+                    </div>
+                    <div class="lbox-b clearfix">
+                    	<ul class="nav1">
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                        <ul>
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rbox clearfix">
+                	<div class="rbox-l">
+                    	<a href="#">
+                            <div class="pgbox">
+                                <img src="img/cc1.jpg" />
+                                <p class="opa1"></p>
+                                <p class="opa2"></p>
+                                <p class="name">权谋巅峰之作</p>
+                            </div>
+                        </a>
+                        <p class="name2"><a href="#">《琅琊榜》</a></p>
+                    </div>
+                    <div class="rbox-r">
+                    	<ul class="clearfix">
+                        	<li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="j-box">
+        	<div class="box clearfix">
+        		<div class="lbox">
+                	<div class="lbox-t clearfix">
+                            <div>
+                                <a href="#"><img src="img/m1.jpg" /></a>
+                                <a href="#"><p>360影视大全</p></a>
+                            </div>
+                            <div class="div2">
+                                <a href="#"><img src="img/m2.jpg" /></a>
+                                <a href="#"><p>乐视</p></a>
+                            </div>
+                    </div>
+                    <div class="lbox-b clearfix">
+                    	<ul class="nav1">
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                        <ul>
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rbox clearfix">
+                	<div class="rbox-l">
+                    	<a href="#">
+                            <div class="pgbox">
+                                <img src="img/cc1.jpg" />
+                                <p class="opa1"></p>
+                                <p class="opa2"></p>
+                                <p class="name">权谋巅峰之作</p>
+                            </div>
+                        </a>
+                        <p class="name2"><a href="#">《琅琊榜》</a></p>
+                    </div>
+                    <div class="rbox-r">
+                    	<ul class="clearfix">
+                        	<li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc3.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc3.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc3.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc3.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc3.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc3.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="j-box">
+        	<div class="box clearfix">
+        		<div class="lbox">
+                	<div class="lbox-t clearfix">
+                            <div>
+                                <a href="#"><img src="img/m1.jpg" /></a>
+                                <a href="#"><p>360影视大全</p></a>
+                            </div>
+                            <div class="div2">
+                                <a href="#"><img src="img/m2.jpg" /></a>
+                                <a href="#"><p>乐视</p></a>
+                            </div>
+                    </div>
+                    <div class="lbox-b clearfix">
+                    	<ul class="nav1">
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                        <ul>
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rbox clearfix">
+                	<div class="rbox-l">
+                    	<a href="#">
+                            <div class="pgbox">
+                                <img src="img/cc1.jpg" />
+                                <p class="opa1"></p>
+                                <p class="opa2"></p>
+                                <p class="name">权谋巅峰之作</p>
+                            </div>
+                        </a>
+                        <p class="name2"><a href="#">《琅琊榜》</a></p>
+                    </div>
+                    <div class="rbox-r">
+                    	<ul class="clearfix">
+                        	<li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                            <li class="li1">
+                            	<div class="pgbox">
+                                    <img src="img/cc4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                                <p class="name2"><a href="#">《栀子花开》</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="watch j-tab">
+    	<div class="tit clearfix">
+        	<h3><a href="#"><i></i>购物</a></h3>
+            <ul class="nav clearfix">
+            	<li class="j-btn active"><a href="javascript:;">购物专区</a></li>
+                <li class="j-btn"><a href="javascript:;">今日团购</a></li>
+                <li class="j-btn"><a href="javascript:;">智能设备</a></li>
+            </ul>
+            <ul class="nav2 clearfix">
+            	<li><a href="#">囧图</a></li>
+                <li><a href="#">嘻嘻哈哈</a></li>
+                <li><a href="#">搞笑视频</a></li>
+                <li><a href="#">娱乐八卦</a></li>
+                <li><a href="#">主播</a></li>
+            </ul>
+        </div>
+        
+        <div class="j-box active">
+        	<div class="box clearfix">
+        		<div class="lbox">
+                	<div class="lbox-t clearfix">
+                            <div>
+                                <a href="#"><img src="img/m3.jpg" /></a>
+                                <a href="#"><p>360影视大全</p></a>
+                            </div>
+                            <div class="div2">
+                                <a href="#"><img src="img/m4.jpg" /></a>
+                                <a href="#"><p>乐视</p></a>
+                            </div>
+                    </div>
+                    <div class="lbox-b clearfix">
+                    	<ul class="nav1">
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                        <ul>
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rbox clearfix">
+                	<div class="rbox-l rbox-l2">
+                    	<a href="#">
+                            <div class="pgbox pgbox2">
+                                <img src="img/dd1.jpg" />
+                                <p class="opa1"></p>
+                                <p class="opa2"></p>
+                                <p class="name">权谋巅峰之作</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="rbox-r">
+                    	<ul class="clearfix">
+                        	<li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd3.png" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd3.png" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd3.png" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd3.png" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd3.png" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd3.png" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="j-box">
+        	<div class="box clearfix">
+        		<div class="lbox">
+                	<div class="lbox-t clearfix">
+                            <div>
+                                <a href="#"><img src="img/m3.jpg" /></a>
+                                <a href="#"><p>360影视大全</p></a>
+                            </div>
+                            <div class="div2">
+                                <a href="#"><img src="img/m4.jpg" /></a>
+                                <a href="#"><p>乐视</p></a>
+                            </div>
+                    </div>
+                    <div class="lbox-b clearfix">
+                    	<ul class="nav1">
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                        <ul>
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rbox clearfix">
+                	<div class="rbox-l rbox-l2">
+                    	<a href="#">
+                            <div class="pgbox pgbox2">
+                                <img src="img/dd1.jpg" />
+                                <p class="opa1"></p>
+                                <p class="opa2"></p>
+                                <p class="name">权谋巅峰之作</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="rbox-r">
+                    	<ul class="clearfix">
+                        	<li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd2.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="j-box">
+        	<div class="box clearfix">
+        		<div class="lbox">
+                	<div class="lbox-t clearfix">
+                            <div>
+                                <a href="#"><img src="img/m3.jpg" /></a>
+                                <a href="#"><p>360影视大全</p></a>
+                            </div>
+                            <div class="div2">
+                                <a href="#"><img src="img/m4.jpg" /></a>
+                                <a href="#"><p>乐视</p></a>
+                            </div>
+                    </div>
+                    <div class="lbox-b clearfix">
+                    	<ul class="nav1">
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                        <ul>
+                        	<li class="clearfix"><i></i><a href="#">琅琊榜</a></li>
+                            <li class="clearfix"><i></i><a href="#">调皮王妃</a></li>
+                            <li class="clearfix"><i></i><a href="#">澳门风云2</a></li>
+                            <li class="clearfix"><i></i><a href="#">疯狂外星人</a></li>
+                            <li class="clearfix"><i></i><a href="#">实时直播</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rbox clearfix">
+                	<div class="rbox-l rbox-l2">
+                    	<a href="#">
+                            <div class="pgbox pgbox2">
+                                <img src="img/dd1.jpg" />
+                                <p class="opa1"></p>
+                                <p class="opa2"></p>
+                                <p class="name">权谋巅峰之作</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="rbox-r">
+                    	<ul class="clearfix">
+                        	<li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            <li class="li2">
+                            	<div class="pgbox pgbox2">
+                                    <img src="img/dd4.jpg" />
+                                    <p class="opa1"></p>
+                                    <p class="opa2"></p>
+                                    <p class="name">白开水般的感情</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+       	
+    </div>
+    
+    <div class="relax game j-tab">
+    	<div class="tit clearfix">
+        	<h3><a href="#"><i></i>玩游戏</a></h3>
+            <ul class="nav clearfix">
+            	<li class="j-btn active"><a href="javascript:;">热门游戏</a></li>
+                <li class="j-btn"><a href="javascript:;">网页游戏</a></li>
+                <li class="j-btn"><a href="javascript:;">手机游戏</a></li>
+                <li class="j-btn"><a href="javascript:;">休闲棋牌</a></li>
+            </ul>
+            <ul class="nav2 clearfix">
+            	<li><a href="#">囧图</a></li>
+                <li><a href="#">嘻嘻哈哈</a></li>
+                <li><a href="#">搞笑视频</a></li>
+                <li><a href="#">娱乐八卦</a></li>
+                <li><a href="#">主播</a></li>
+            </ul>
+        </div>
+        
+        <div class="j-box active">
+        	<div class="box1 clearfix">
+            	<div class="box1-l">
+                	<ul class="clearfix">
+                    	<a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                    </ul>
+                </div>
+                
+                <div class="box1-r">
+                	<ul class="clearfix">
+                    	<a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                         <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+        </div>
+        
+        <div class="j-box">
+        	<div class="box1 clearfix">
+            	<div class="box1-l">
+                	<ul class="clearfix">
+                    	<a href="#"><li>
+                        	<img src="img/ee2.jpg" />
+                            <p>天天酷跑</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee2.jpg" />
+                            <p>天天酷跑</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee2.jpg" />
+                            <p>天天酷跑</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee2.jpg" />
+                            <p>天天酷跑</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                    </ul>
+                </div>
+                
+                <div class="box1-r">
+                	<ul class="clearfix">
+                    	<a href="#"><li>
+                        	<img src="img/ff2.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff2.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff2.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                         <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+        </div>
+        
+        <div class="j-box">
+        	<div class="box1 clearfix">
+            	<div class="box1-l">
+                	<ul class="clearfix">
+                    	<a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>可爱宝宝</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>可爱宝宝</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>可爱宝宝</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>可爱宝宝</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                    </ul>
+                </div>
+                
+                <div class="box1-r">
+                	<ul class="clearfix">
+                    	<a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff3.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff2.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                         <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+        </div>
+        
+        <div class="j-box">
+        	<div class="box1 clearfix">
+            	<div class="box1-l">
+                	<ul class="clearfix">
+                    	<a href="#"><li>
+                        	<img src="img/ee4.png" />
+                            <p>捕鱼达人</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee4.png" />
+                            <p>捕鱼达人</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>可爱宝宝</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>可爱宝宝</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee4.png" />
+                            <p>捕鱼达人</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee3.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee4.png" />
+                            <p>捕鱼达人</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee4.png" />
+                            <p>捕鱼达人</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee4.png" />
+                            <p>捕鱼达人</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ee1.jpg" />
+                            <p>葫芦娃历险</p>
+                        </li></a>
+                    </ul>
+                </div>
+                
+                <div class="box1-r">
+                	<ul class="clearfix">
+                    	<a href="#"><li>
+                        	<img src="img/ff4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff3.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        <a href="#"><li>
+                        	<img src="img/ff2.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                         <a href="#"><li>
+                        	<img src="img/ff1.png" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">一刀升一级</p>
+                        </li></a>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+        </div>
+        
+    </div>
+    
+    <div class="life">
+    	<div class="tit clearfix">
+        	<h3><a href="#"><i></i>生活百科</a></h3>
+            <ul class="nav2 clearfix">
+            	<li><a href="#">互联网健康</a></li>
+                <li><a href="#">上门按摩</a></li>
+                <li><a href="#">野史八卦</a></li>
+                <li><a href="#">手机充值</a></li>
+                <li><a href="#">房产家居</a></li>
+                <li><a href="#">健康生活</a></li>
+                <li><a href="#">安全播报</a></li>
+            </ul>
+        </div>
+        
+        <div class="j-box active">
+        	<div class="box">
+            	<ul class="nav1 clearfix">
+                	<li>
+                    	<a href="#"><div class="pgbox">
+                        	<img src="img/cc4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">穿水晶婚鞋</p>
+                        </div></a>
+                        <ul class="nav3">
+                        	<li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#"><div class="pgbox">
+                        	<img src="img/cc4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">穿水晶婚鞋</p>
+                        </div></a>
+                        <ul class="nav3">
+                        	<li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#"><div class="pgbox">
+                        	<img src="img/cc4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">穿水晶婚鞋</p>
+                        </div></a>
+                        <ul class="nav3">
+                        	<li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#"><div class="pgbox">
+                        	<img src="img/cc4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">穿水晶婚鞋</p>
+                        </div></a>
+                        <ul class="nav3">
+                        	<li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+   		</div>
+        
+        <div class="j-box">
+        	<div class="box">
+            	<ul class="nav1 clearfix">
+                	<li>
+                    	<a href="#"><div class="pgbox">
+                        	<img src="img/cc4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">穿水晶婚鞋</p>
+                        </div></a>
+                        <ul class="nav3">
+                        	<li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神12</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#"><div class="pgbox">
+                        	<img src="img/cc4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">穿水晶婚鞋</p>
+                        </div></a>
+                        <ul class="nav3">
+                        	<li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#"><div class="pgbox">
+                        	<img src="img/cc4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">穿水晶婚鞋</p>
+                        </div></a>
+                        <ul class="nav3">
+                        	<li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#"><div class="pgbox">
+                        	<img src="img/cc4.jpg" />
+                            <p class="opa1"></p>
+                            <p class="opa2"></p>
+                            <p class="name">穿水晶婚鞋</p>
+                        </div></a>
+                        <ul class="nav3">
+                        	<li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                            <li class="clearfix"><i></i><a href="#">曝2015年最火的十大国民女神</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <a href="javascript:;" class="box-l"><i></i></a>
+            <a href="javascript:;" class="box-r"><i></i></a>
+   		</div>
+
+    </div>
+    
+    
+</div>
+
+<div class="footer">
+	<div class="box">
+    	<a href="#">Investor Relations</a> <i>|</i>
+        <a href="#">关于我们</a> <i>|</i>
+        <a href="#">安全保障</a> <i>|</i>
+        <a href="#">360招聘</a> <i>|</i>
+        <a href="#">战略合作：MSN中文网</a> <i>|</i>
+        <i>Copyright ©360.cn. All Rights Reserved.</i>&nbsp;&nbsp;
+        <a href="#">京ICP证080047号</a>
+        <a href="#">京公网安备110000000006号</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

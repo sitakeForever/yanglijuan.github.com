@@ -1,0 +1,912 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script>
+	window.onload=function(){
+		var nav1=document.getElementById('nav1');
+		var nav1_a=nav1.getElementsByClassName('a');
+		var xia=nav1.getElementsByClassName('xia');
+		for(var i=0;i<nav1_a.length;i++){	
+			nav1_a[i].index=i;
+			nav1_a[i].onmouseover=function(){
+			 nav1_a[0].className='a a2';	
+			 nav1_a[1].className='a a3';	
+			for(var i=2;i<nav1_a.length;i++){
+					nav1_a[i].className='a';	
+				
+			}
+			for(var i=0;i<xia.length;i++){
+				xia[i].className='xia';	
+			}
+				if(this.index==0){
+					this.className='a a2 active';	
+				}else if(this.index==1){
+					this.className='a a3 active';	
+				}else{
+					this.className='a active';	
+				}
+				xia[this.index-1].className='xia show';
+			}
+		
+		
+		
+			
+		}
+		
+		var select1=document.getElementById('select1');
+		var a1=document.getElementById('a1');
+		a1.onclick=function(){
+			if(select1.className=='select'){
+				select1.className='select show';	
+			}else{
+				select1.className='select';	
+			}
+			
+		}
+		
+		var newcar2_t=document.getElementById('newcar2_t');
+		var newcar2_b=document.getElementById('newcar2_b');
+		var newcar2_b_ul=newcar2_b.getElementsByTagName('ul');
+		var newcar2_t_li=newcar2_t.getElementsByTagName('li');
+		for(var i=0;i<newcar2_t_li.length;i++){
+			newcar2_t_li[i].index=i;
+			newcar2_t_li[i].onclick=function(){
+				for(var i=0;i<newcar2_t_li.length;i++){
+					newcar2_t_li[i].className='c'+(i+1);
+					newcar2_b_ul[i].className='clearfix';	
+				}
+				this.className='c'+(this.index+1)+' active';
+				newcar2_b_ul[this.index].className='clearfix show';	
+			}	
+		}
+		
+	}
+</script>
+</head>
+
+<body>
+<div class="header1">
+	<div class="header1_box clearfix">
+    	<h1><a href="#">百得利汽车</a></h1>
+        <div class="buycar">
+        	<a href="#"></a>
+        </div>
+        <div class="youbian">
+        	<a href="#" class="a1">登录</a>
+            <i class="shu">|</i>
+            <a href="#" class="a2">注册</a>
+            <a href="#" class="a3">[会员中心]</a>
+            <a href="#" class="a4"></a>
+            <a href="#" class="a5"></a>
+        </div>
+        
+    </div>
+</div>
+<div class="header2">
+	<div class="header2_box clearfix">
+    	<div class="first" id="a1">
+    		<a href="#" class="a1">产品分类<i></i></a>
+        	<div class="select" id="select1">
+            	<ul>
+                	<li class="mode1">
+                    	<h4>生活精品</h4>
+                        <p class="clearfix"><a href="#">大众</a><a href="#">奔驰</a><a href="#">奥迪</a><a href="#" class="forth">宝马</a><a href="#">现代</a><a href="#">标志</a><a href="#">日产</a><a href="#" class="forth">兰博</a><a href="#">基尼</a></p>
+                    </li>
+                    <li class="mode1 mode2">
+                    	<h4>车内精品</h4>
+                        <p class="clearfix"><a href="#">后备箱垫</a><a href="#">汽车坐垫</a><a href="#" class="forth">内饰</a><a href="#">套装</a><a href="#">内饰套装</a><a href="#" class="forth">汽车精品</a></p>
+                    </li>
+                    <li class="mode1 mode3">
+                    	<h4>改装配件</h4>
+                        <p class="clearfix"><a href="#">雨刮器</a><a href="#">汽车装饰灯</a><a href="#" class="forth">手贴</a><a href="#">挡泥板</a><a href="#">3D立体贴</a><a href="#" class="forth">扶手箱</a></p>
+                    </li>
+                    <li class="mode1 mode4">
+                    	<h4>生活精品</h4>
+                        <p class="clearfix"><a href="#">大众</a><a href="#">奔驰</a><a href="#">奥迪</a><a href="#" class="forth">宝马</a><a href="#">现代</a><a href="#">标志</a><a href="#">日产</a><a href="#" class="forth">兰博</a><a href="#">基尼</a></p>
+                    </li>
+                </ul>
+                <p class="lastline"><a href="#">更多&gt;&gt;</a></p>
+            </div>
+        </div>
+        <ul class="nav" id="nav1">
+            <li class="list"><a href="#" class="a a2">首页</a></li>
+            <li class="list">
+            	<a href="#" class="a a3 active">精品商城</a>
+            	<div class="xia">
+                	<ul>
+                    	<a href="#"><li>奢侈精品</li></a>
+                        <a href="#"><li>改装配件</li></a>
+                        <a href="#"><li>精品内饰</li></a>
+                        <a href="#"><li>服务套餐</li></a>
+                        <a href="#"><li>积分礼品</li></a>
+                        <a href="#"><li class="last">保险产品</li></a>
+                    </ul>
+                </div>
+            </li>
+        	<li class="list">
+            <a href="#" class="a">积分商城</a>
+            <div class="xia">
+                	<ul>
+                    	<a href="#"><li>奢侈精品</li></a>
+                        <a href="#"><li>改装配件</li></a>
+                        <a href="#"><li>精品内饰</li></a>
+                        <a href="#"><li>服务套餐</li></a>
+                        <a href="#"><li>积分礼品</li></a>
+                        <a href="#"><li class="last">保险产品</li></a>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+            <a href="#" class="a">服务套餐</a>
+            <div class="xia">
+                	<ul>
+                    	<a href="#"><li>奢侈精品</li></a>
+                        <a href="#"><li>改装配件</li></a>
+                        <a href="#"><li>精品内饰</li></a>
+                        <a href="#"><li>服务套餐</li></a>
+                        <a href="#"><li>积分礼品</li></a>
+                        <a href="#"><li class="last">保险产品</li></a>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+            <a href="#" class="a">保险服务</a>
+            <div class="xia">
+                	<ul>
+                    	<a href="#"><li>奢侈精品</li></a>
+                        <a href="#"><li>改装配件</li></a>
+                        <a href="#"><li>精品内饰</li></a>
+                        <a href="#"><li>服务套餐</li></a>
+                        <a href="#"><li>积分礼品</li></a>
+                        <a href="#"><li class="last">保险产品</li></a>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+            <a href="#" class="a">二手车</a>
+            <div class="xia">
+                	<ul>
+                    	<a href="#"><li>奢侈精品</li></a>
+                        <a href="#"><li>改装配件</li></a>
+                        <a href="#"><li>精品内饰</li></a>
+                        <a href="#"><li>服务套餐</li></a>
+                        <a href="#"><li>积分礼品</li></a>
+                        <a href="#"><li class="last">保险产品</li></a>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+            <a href="#" class="a">预约服务</a>
+            <div class="xia">
+                	<ul>
+                    	<a href="#"><li>奢侈精品</li></a>
+                        <a href="#"><li>改装配件</li></a>
+                        <a href="#"><li>精品内饰</li></a>
+                        <a href="#"><li>服务套餐</li></a>
+                        <a href="#"><li>积分礼品</li></a>
+                        <a href="#"><li class="last">保险产品</li></a>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+            <a href="#" class="a">特色改装</a>
+            <div class="xia">
+                	<ul>
+                    	<a href="#"><li>奢侈精品</li></a>
+                        <a href="#"><li>改装配件</li></a>
+                        <a href="#"><li>精品内饰</li></a>
+                        <a href="#"><li>服务套餐</li></a>
+                        <a href="#"><li>积分礼品</li></a>
+                        <a href="#"><li class="last">保险产品</li></a>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+            <a href="#" class="a">车友会</a>
+            <div class="xia">
+                	<ul>
+                    	<a href="#"><li>奢侈精品</li></a>
+                        <a href="#"><li>改装配件</li></a>
+                        <a href="#"><li>精品内饰</li></a>
+                        <a href="#"><li>服务套餐</li></a>
+                        <a href="#"><li>积分礼品</li></a>
+                        <a href="#"><li class="last">保险产品</li></a>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header3"></div>
+
+<div class="newcar">
+	<h3>新车品牌专区</h3>
+	<div class="newcar2">
+    	<div class="newcar2_t" id="newcar2_t">
+        	<ul class="clearfix">
+            	<li class="c1">
+                	<img src="img/4.jpg" />
+                	<i class="jiao"></i>
+                </li>
+                <li class="c2">
+                	<img src="img/5.jpg" />
+                	<i class="jiao"></i>
+                </li>
+                <li class="c3 active">
+                	<img src="img/6.jpg" />
+                	<i class="jiao"></i>
+                </li>
+                <li class="c4">
+                	<img src="img/7.jpg" />
+                	<i class="jiao"></i>
+                </li>
+                <li class="c5">
+                	<img src="img/8.jpg" />
+                	<i class="jiao"></i>
+                </li>
+                <li class="c6">
+                	<img src="img/9.jpg" />
+                	<i class="jiao"></i>
+                </li>      
+                <li class="c7 last">
+                	<img src="img/10.jpg" />
+                	<i class="jiao"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="newcar2_b" id="newcar2_b">
+        	<ul class="clearfix">
+            	<li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+            </ul>
+            <ul class="clearfix">
+            	<li>
+                	<a href="#"><img src="img/12.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+            </ul>
+            <ul class="clearfix show">
+            	<li>
+                	<a href="#"><img src="img/13.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+            </ul>
+            <ul class="clearfix">
+            	<li>
+                	<a href="#"><img src="img/14.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+            </ul>
+            <ul class="clearfix">
+            	<li>
+                	<a href="#"><img src="img/13.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/12.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+            </ul>
+            <ul class="clearfix">
+            	<li>
+                	<a href="#"><img src="img/14.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/13.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/12.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+            </ul>
+            <ul class="clearfix">
+            	<li>
+                	<a href="#"><img src="img/13.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/14.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/11.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/12.jpg" /></a>
+                    <p class="name1"><a href="#">极致优雅 新cc演绎摩登生活秀</a></p>
+                    <p class="name2">原价：<i>199万元</i></p>
+                    <p class="name3">现价：<i>99万元</i></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="bou">
+	<h3 class="clearfix">
+    	<i class="hhl">精品商城</i>
+        <a href="#" class="hhr">更多</a>
+    </h3>
+    <div class="wu"></div>
+    <div class="bou2">
+    	<ul class="clearfix">
+        	<li class="mode7">
+            	<a href="#"><img src="img/16.jpg" /></a>
+                <a href="#"><p class="name">SLK 200 豪华运动型</p></a>
+                <ul class="msg">
+                	<li>平均油耗率（L/100km）</li>
+                    <li>加速时间0-100km/h(s):7</li>
+                    <li>最高车速（km/h）:237</li>
+                    <li>轴距（mm）：2430</li>
+                </ul>
+                <p class="last clearfix">
+                	<i>价格：200-300万</i>
+                    <a href="#">立即购买<span></span></a>
+                </p>
+            </li>
+            <li class="mode7">
+            	<a href="#"><img src="img/16.jpg" /></a>
+                <a href="#"><p class="name">SLK 200 豪华运动型</p></a>
+                <ul class="msg">
+                	<li>平均油耗率（L/100km）</li>
+                    <li>加速时间0-100km/h(s):7</li>
+                    <li>最高车速（km/h）:237</li>
+                    <li>轴距（mm）：2430</li>
+                </ul>
+                <p class="last clearfix">
+                	<i>价格：200-300万</i>
+                    <a href="#">立即购买<span></span></a>
+                </p>
+            </li>
+            <li class="mode7">
+            	<a href="#"><img src="img/16.jpg" /></a>
+                <a href="#"><p class="name">SLK 200 豪华运动型</p></a>
+                <ul class="msg">
+                	<li>平均油耗率（L/100km）</li>
+                    <li>加速时间0-100km/h(s):7</li>
+                    <li>最高车速（km/h）:237</li>
+                    <li>轴距（mm）：2430</li>
+                </ul>
+                <p class="last clearfix">
+                	<i>价格：200-300万</i>
+                    <a href="#">立即购买<span></span></a>
+                </p>
+            </li>
+            <li class="mode7">
+            	<a href="#"><img src="img/16.jpg" /></a>
+                <a href="#"><p class="name">SLK 200 豪华运动型</p></a>
+                <ul class="msg">
+                	<li>平均油耗率（L/100km）</li>
+                    <li>加速时间0-100km/h(s):7</li>
+                    <li>最高车速（km/h）:237</li>
+                    <li>轴距（mm）：2430</li>
+                </ul>
+                <p class="last clearfix">
+                	<i>价格：200-300万</i>
+                    <a href="#">立即购买<span></span></a>
+                </p>
+            </li>
+        </ul>
+        <div class="last1">
+        <a href="#"><img src="img/17.jpg" /></a>
+        </div>
+    </div>
+</div>
+ 
+
+<div class="tui">
+	<h3 class="clearfix">
+    	<i class="hhl">精品推荐</i>
+    </h3>
+    <div class="wu"></div>
+    <div class="tui2 clearfix">
+    	<div class="first">
+    	<a href="#"><img src="img/18.jpg" /></a>
+        </div>
+        <div class="second">
+        	<ul>
+            	<a href="#"><li>
+                	<img src="img/n1.jpg" />
+                </li></a>
+                <a href="#"><li>
+                	<img src="img/n1.jpg" />
+                </li></a>
+                <a href="#"><li>
+                	<img src="img/n1.jpg" />
+                </li></a>
+                <a href="#"><li>
+                	<img src="img/n1.jpg" />
+                </li></a>
+            </ul>
+            <p class="button clearfix">
+            	<a href="#" class="active"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </p>
+        </div>
+        <div class="third">
+        	<ul class="clearfix">
+            	<a href="#"><li><img src="img/19.jpg" /></li></a>
+                <a href="#" class="er"><li><img src="img/19.jpg" /></li></a>
+                <a href="#"><li><img src="img/19.jpg" /></li></a>
+                <a href="#" class="er"><li><img src="img/19.jpg" /></li></a>
+            </ul>
+        </div>
+        <div class="forth">
+        	<h4 class="clearfix">
+            	<i>新闻动态</i>
+                <a href="#">更多 &gt;&gt;</a>
+            </h4>
+            <ul>
+            	<li>
+                	<a href="#">一汽奥迪博世亲临百得利海淀......</a>
+                </li>
+                <li>
+                	<a href="#">一汽奥迪博世亲临百得利海淀......</a>
+                </li>
+                <li>
+                	<a href="#">一汽奥迪博世亲临百得利海淀......</a>
+                </li>
+                <li>
+                	<a href="#">一汽奥迪博世亲临百得利海淀......</a>
+                </li>
+                <li>
+                	<a href="#">一汽奥迪博世亲临百得利海淀......</a>
+                </li>
+                <li>
+                	<a href="#">一汽奥迪博世亲临百得利海淀......</a>
+                </li>
+            </ul>
+            <div class="last">
+            <a href="#"><img src="img/20.jpg" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="score">
+	<h3 class="clearfix">
+    	<i class="hhl">积分商城</i>
+        <a href="#" class="hhr">更多</a>
+    </h3>
+    <div class="wu"></div>
+    <div class="score2">
+    	<ul class="clearfix">
+        	<li>
+            	<a href="#"><img src="img/21.jpg" /></a>
+                <p class="name"><a href="#">大众新款速腾</a></p>
+                <p class="jifen">
+                	兑换积分：
+                	<i>1980分</i>
+                </p>
+                <a href="#" class="huan">开始兑换</a>
+            </li>
+            <li>
+            	<a href="#"><img src="img/21.jpg" /></a>
+                <p class="name"><a href="#">大众新款速腾</a></p>
+                <p class="jifen">
+                	兑换积分：
+                	<i>1980分</i>
+                </p>
+                <a href="#" class="huan">开始兑换</a>
+            </li>
+            <li>
+            	<a href="#"><img src="img/21.jpg" /></a>
+                <p class="name"><a href="#">大众新款速腾</a></p>
+                <p class="jifen">
+                	兑换积分：
+                	<i>1980分</i>
+                </p>
+                <a href="#" class="huan">开始兑换</a>
+            </li>
+            <li>
+            	<a href="#"><img src="img/21.jpg" /></a>
+                <p class="name"><a href="#">大众新款速腾</a></p>
+                <p class="jifen">
+                	兑换积分：
+                	<i>1980分</i>
+                </p>
+                <a href="#" class="huan">开始兑换</a>
+            </li>
+        </ul>
+    </div>
+    <div class="score2_b">
+    	<ul class="clearfix">
+        	<li>
+            	<a href="#"><img src="img/q1.jpg" /></a>
+            </li>
+            <li class="ss">
+            	<a href="#"><img src="img/q2.jpg" /></a>
+            </li>
+            <li>
+            	<a href="#"><img src="img/q3.jpg" /></a>
+            </li>
+            <li class="ss">
+            	<a href="#"><img src="img/q4.jpg" /></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="msg">
+	<h3 class="clearfix">
+    	<i class="hhl">企业信息</i>
+        <a href="#" class="hhr">更多</a>
+    </h3>
+    <div class="wu"></div>
+    <div class="msg2 clearfix">
+    	<div class="first">
+        	<h4 class="clearfix">
+            	<i>企业信息 &gt;&gt;</i>
+                <a href="#">More &gt;&gt;</a>
+            </h4>
+            <div class="aa">
+            <a href="#"><img src="img/z1.jpg" /></a>
+            </div>
+            <ul>
+            	<li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+            </ul>
+        </div>
+        <div class="second">
+        	<h4 class="clearfix">
+            	<i>实用工具 &gt;&gt;</i>
+                <a href="#">More &gt;&gt;</a>
+            </h4>
+            <ul class="clearfix">
+            	<li>
+                	<a href="#"><img src="img/a1.jpg" /></a>
+                    <p class="name"><a href="#">车型对比</a></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/a1.jpg" /></a>
+                    <p class="name"><a href="#">车型对比</a></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/a1.jpg" /></a>
+                    <p class="name"><a href="#">车型对比</a></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/a1.jpg" /></a>
+                    <p class="name"><a href="#">车型对比</a></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/a1.jpg" /></a>
+                    <p class="name"><a href="#">车型对比</a></p>
+                </li>
+                <li>
+                	<a href="#"><img src="img/a1.jpg" /></a>
+                    <p class="name"><a href="#">车型对比</a></p>
+                </li>
+            </ul>
+            
+            <h5>问答专家团 &gt;&gt;</h5>
+            <p class="dd"><a href="#">想做一个底牌装甲请问有必要吗？</a></p>
+            <p class="dd"><a href="#">想做一个底牌装甲请问有必要吗？</a></p>
+            <p class="dd"><a href="#">想做一个底牌装甲请问有必要吗？</a></p>
+            <p class="dd"><a href="#">想做一个底牌装甲请问有必要吗？</a></p>
+        </div>
+        <div class="third">
+        	<ul class="nav1 clearfix">
+            	<li>
+                	<a href="#"><img src="img/a7.jpg" /></a>
+                </li>
+                <li>
+                	<a href="#"><img src="img/a7.jpg" /></a>
+                </li>
+                <li>
+                	<a href="#"><img src="img/a7.jpg" /></a>
+                </li>
+                <li>
+                	<a href="#"><img src="img/a7.jpg" /></a>
+                </li>
+            </ul>
+            <h5>促销信息 &gt;&gt;</h5>
+             <ul class="nav2">
+            	<li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+            </ul>
+        </div>
+        <div class="forth">
+        	<a href="#"><img src="img/z2.jpg" /></a>
+        </div>
+    </div>
+    <div class="last">
+    	<a href="#"><img src="img/17.jpg" /></a>
+    </div>
+</div>
+
+<div class="serve">
+	<h3>服务行业</h3>
+    <div class="serve2 clearfix">
+    	<div class="first">
+        	<h4 class="clearfix">
+            	<i>服务套餐</i>
+                <a href="#">更多&gt;&gt;</a>
+            </h4>
+            <div class="pg">
+            	 <a href="#"><img src="img/t1.jpg" /></a>
+            </div>
+            <ul>
+            	<li><a href="#">美容卡</a></li>
+                <li><a href="#">美容卡</a></li>
+                <li><a href="#">美容卡</a></li>
+            </ul>
+        </div>
+        <div class="second">
+        	<h4 class="clearfix">
+            	<i>保险服务</i>
+                <a href="#">更多&gt;&gt;</a>
+            </h4>
+             <div class="pg">
+            	 <a href="#"><img src="img/t2.jpg" /></a>
+            </div>
+            <div class="di clearfix">
+            	<ul class="nav1">
+            	<li><a href="#">美容卡</a></li>
+                <li><a href="#">美容卡</a></li>
+                <li><a href="#">美容卡</a></li>
+               </ul>
+                <ul>
+            	<li><a href="#">美容卡</a></li>
+                <li><a href="#">美容卡</a></li>
+                <li><a href="#">美容卡</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="third">
+        	<h4 class="clearfix">
+            	<i>预约服务</i>
+                <a href="#">更多&gt;&gt;</a>
+            </h4>
+            <div class="in clearfix">
+            	 <div class="in_l">
+            	 <a href="#"><img src="img/t3.jpg" /></a>
+                 </div>
+                 <div class="in_r">
+                  <ul>
+                    <li><a href="#">美容卡</a></li>
+                    <li><a href="#">美容卡</a></li>
+                    <li><a href="#">美容卡</a></li>
+                    <li><a href="#">美容卡</a></li>
+                   </ul>
+                   <p class="last clearfix">
+                   	 <img src="img/t4.jpg" />
+                     <i>400-800-266</i>
+                   </p>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="center">
+	<h3>百得利中心</h3>
+    <div class="center2 clearfix">
+    	<div class="first">
+        	<h4>二手车</h4>
+            <a href="#"><div class="pg">
+            	<img src="img/z3.jpg" />
+                <p class="opa">二手车本地过户流程</p>
+            </div></a>
+            <ul>
+            	<li class="clearfix">
+                	<i></i>
+                    <a href="#">二手车迁入与外迁的限制条件</a>
+                </li>
+                <li class="clearfix">
+                	<i></i>
+                    <a href="#">二手车迁入与外迁的限制条件</a>
+                </li>
+                <li class="clearfix">
+                	<i></i>
+                    <a href="#">二手车迁入与外迁的限制条件</a>
+                </li>
+            </ul>
+        </div>
+        <div class="first second">
+        	<h4>特色改装</h4>
+            <a href="#"><div class="pg">
+            	<img src="img/z3.jpg" />
+                <p class="opa">特色改装</p>
+            </div></a>
+            <ul>
+            	<li class="clearfix">
+                	<i></i>
+                    <a href="#">二手车迁入与外迁的限制条件</a>
+                </li>
+                <li class="clearfix">
+                	<i></i>
+                    <a href="#">二手车迁入与外迁的限制条件</a>
+                </li>
+                <li class="clearfix">
+                	<i></i>
+                    <a href="#">二手车迁入与外迁的限制条件</a>
+                </li>
+            </ul>
+        </div>
+        <div class="first third">
+        	<h4>车友会</h4>
+            <a href="#"><div class="pg">
+            	<img src="img/z3.jpg" />
+                <p class="opa">车友会</p>
+            </div></a>
+            <ul>
+            	<li class="clearfix">
+                	<i></i>
+                    <a href="#">二手车迁入与外迁的限制条件</a>
+                </li>
+                <li class="clearfix">
+                	<i></i>
+                    <a href="#">二手车迁入与外迁的限制条件</a>
+                </li>
+                <li class="clearfix">
+                	<i></i>
+                    <a href="#">二手车迁入与外迁的限制条件</a>
+                </li>
+            </ul>
+        </div>
+        <div class="forth">
+        	<h4>即将上市</h4>
+            <div class="forth2 clearfix">
+            	<div class="forth2_l"><img src="img/z5.jpg" /></div>
+                <div class="forth2_r">
+                	<p class="p1">2014年8月08日</p>
+                    <p class="p2"><a href="#">奥德赛</a></p>
+                    <p class="p1">2014年8月08日</p>
+                    <p class="p2"><a href="#">奥德赛</a></p>
+                    <p class="p1">2014年8月08日</p>
+                    <p class="p2"><a href="#">奥德赛</a></p>
+                    <p class="p1">2014年8月08日</p>
+                    <p class="p2"><a href="#">奥德赛</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="footer2">
+    	<p class="p1">
+        	<a href="#">集团介绍</a> <i>|</i>
+            <a href="#">集团介绍</a> <i>|</i>
+            <a href="#">集团介绍</a> <i>|</i>
+            <a href="#">集团介绍</a> <i>|</i>
+            <a href="#">集团介绍</a> <i>|</i>
+            <a href="#">集团介绍</a>
+        </p>
+        <p class="p2">京ICP备10020294 版权所有 2011北京百得利汽车进出口集团有限公司</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ padding:0; margin:0;}
+.box{ width:220px; height:220px; margin:100px auto; background:#ccc; position:relative;}
+.box1{ width:100%; height:20px; position:absolute; background:#F00; top:0; left:0; z-index:1;}
+.box2{ width:100%; height:20px; position:absolute; background:green; bottom:0; left:0; z-index:3;}
+.box3{ width:20px; height:100%; position:absolute; background:blue; top:0; left:0;z-index:2;}
+.box4{ width:20px; height:100%; position:absolute; background:pink; top:0; right:0;z-index:4;}
+</style>
+<script>
+window.onload=function(){
+	var oDiv=document.getElementById('box');
+	var aDiv=oDiv.getElementsByTagName('div');
+	var n=100;
+	aDiv[0].onmouseover=function(){
+		n=3;
+		alert(n);	
+	};
+	aDiv[1].onmouseover=function(){
+		n=1;
+		alert(n);	
+	};
+	aDiv[2].onmouseover=function(){
+		n=2;
+		alert(n);	
+	};
+	aDiv[3].onmouseover=function(){
+		n=0;
+		alert(n);	
+	};	
+};
+</script>
+</head>
+
+<body>
+<div class="box" id="box">
+	<div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</div>
+</body>
+</html>

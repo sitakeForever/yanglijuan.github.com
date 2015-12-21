@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css"/>
+<style>
+html,body{ width:100%; height:100%; background:url(images/ac85af.jpg) no-repeat center; background-size:cover;}
+h2{ font-size:50px; line-height:80px; text-align:center; color:#666;}
+.l-box p{ line-height:40px; font-size:20px;}
+span{position:absolute; background:#000; opacity:0.6;}
+.box{ background:#fff; width:650px; position:absolute; top:100px; left:300px; border:1px solid #000; z-index:2000; height:500px;}
+.l-box{ float:left; width:300px;}
+.r-box{ float:right; width:300px;}
+
+.job{ font-weight:bold;}
+h3{ font-size:20px; font-weight:bold; color:#666; line-height:50px; border-bottom:2px dashed #ccc; position:relative;}
+h3 img{ position:absolute; transition:all 0.5s linear; margin-left:10px;}
+.r-box h3:hover img{transform:rotate(360deg);}
+.r-box b{ font-size:20px; line-height:35px;}
+.r-box i{ font-size:20px; color:#900; font-style:italic; line-height:35px; margin-left:8px;}
+
+.pg{ position:absolute; right:-10px; top:300px; border-radius:50%;}
+</style>
+<script src="js/base.js"></script>
+<script>
+window.onload=function(){
+	var oBody=document.body;
+	
+	//创建span
+	var Row=12;  //行
+	var Col=10;  //列
+	var H=document.documentElement.clientHeight;  //总高度
+	var W=document.documentElement.clientWidth;  //总宽度
+	var h=H/Row;  //一个的高度
+	var w=W/Col;  //一个的宽度
+	var aSpan=[];
+	
+	for(var r=0;r<Row;r++)  //行
+	{
+		for(var c=0;c<Col;c++)
+		{
+			var oSpan=document.createElement('span');
+			
+			//宽高
+			oSpan.style.width=w+'px';
+			oSpan.style.height=h+'px';
+			//位置
+			var left=c*w;
+			var top=r*h;
+			oSpan.style.left=left+'px';
+			oSpan.style.top=top+'px';
+			//添加
+			oBody.appendChild(oSpan);
+			aSpan.push(oSpan);	
+		}	
+	}
+	
+	for(var i=0;i<aSpan.length;i++)
+	{
+		aSpan[i].onmouseover=function(){
+			move(this,{opacity:0});	
+		};
+		aSpan[i].onmouseout=function(){
+			move(this,{opacity:0.6});	
+		};	
+	}	
+};
+</script>
+</head>
+
+<body>
+<div class="box clearfix">
+	<h2>RESUME</h2>
+    <div class="l-box">
+    	<h3>个人基本信息<img src="images/cb94.png"/></h3>
+        <p class="name">名字：杨丽娟</p>
+        <p>出生日期：1991-3</p>
+        <p>学历：大学本科</p>
+        <p>毕业院校：北方民族大学</p>
+        <p>专业：网络工程</p>
+        <p></p>
+        <p class="job">求职意向：前端开发</p>
+        <p></p>
+    </div> 
+    <div class="r-box">
+    	<h3>技术评分（5分满分）<img src="images/8292.png"/></h3>
+        <p><b>HTML+CSS:</b><i>4.8分</i></p>
+        <p><b>JavaScript:</b><i>4.5分</i></p>
+        <p><b>数据交互:</b><i>4.2分</i></p>
+        <p><b>HTML5+CSS3:</b><i>3分</i></p>
+    </div> 
+    <img src="images/R021ELpT2iZq6QR.jpg" class="pg"/> 
+</div>
+</body>
+</html>
